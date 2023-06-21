@@ -1,9 +1,12 @@
 from django.contrib import admin
-from .models import Ecart
+from .models import CartProduct
 
 # Register your models here
-class EcartAdmin(admin.ModelAdmin):
-    list_display = ("user_id", "total_price", "quantity", "date_created", "date_updated")
+class CartProductAdmin(admin.ModelAdmin):
+    list_display = ("user_id", "products", "total_price", "Quantity", "date_created", "date_updated")
 
 
-admin.site.register(Ecart, EcartAdmin)
+admin.site.register(CartProduct, CartProductAdmin)
+
+
+

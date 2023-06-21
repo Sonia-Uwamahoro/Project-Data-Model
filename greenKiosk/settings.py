@@ -40,6 +40,15 @@ INSTALLED_APPS = [
     'inventory',
     'clients',
     'cart',
+    'orders',
+    'payments',
+    'Discount',
+    'notification',
+    'vendor',
+    'createAccount',
+    'searchEngine',
+    'accountRecovery',
+    
 ]
 
 MIDDLEWARE = [
@@ -81,7 +90,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
         'HOST': 'localhost',     # Add the server host
-        'PORT': '5432',
     }
 }
 
